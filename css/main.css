@@ -1,0 +1,362 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+
+}
+
+.link {
+  cursor: pointer;
+}
+
+.slink{
+	cursor: pointer;
+	text-decoration: none;	
+}
+
+.mainHeaderContainer {
+  height: 6em;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-column-gap: 22vw;
+  box-shadow: 5px 10px 18px lightgray;
+}
+div{
+  transition: ease-in-out all 1s;
+}
+
+.logoContainer {
+  height: inherit;
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: 0;
+}
+.logoContainer >.logo {
+  height: inherit;
+}
+.logo >.imgLogo {
+  height: inherit;
+}
+.linksContainer {
+  position: relative;
+  margin: auto;
+  margin-bottom: auto;
+  width: 100%;
+  margin-bottom: 0;
+}
+.linksContainer>.linksList {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  padding: 1.2em;
+  justify-content: space-evenly;
+}
+
+.linksList > .link{
+  font-size: 1.8vw;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+}
+.link:hover {
+  transform: scale(1.2);
+}
+.mobileViewMenu{
+  display: none;
+}
+.mainBodyConatiner {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 30% auto;
+  margin: 1.2em;
+  box-shadow: 5px 10px 15px lightgray;
+  padding: 1em;
+  height: 10vw;
+  width: inherit;
+}
+.contentWrapper>.gameImageConatiner {
+  height: inherit;
+}
+.gameImageConatiner>.image {
+  height: inherit;
+}
+.contentWrapper>.gameImageConatiner>.image>img {
+  height: inherit;
+}
+
+.detailsConatiner {
+  margin: auto;
+}
+.detailsConatiner>.deatilsHeader {
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-align: center;
+}
+.detailsConatiner>.detailEntry {
+  display: inline-block;
+  padding: 1em;
+}
+.detailsConatiner>.detailEntry>.entries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1vw;
+}
+.mainBodyHeaderLinksContainerMV{
+  display: none;
+}
+.trendingGames {
+  box-shadow: 5px 10px 15px lightgray;
+  margin: 1.2em;
+}
+.trendingGamesHeader {
+  font-size: 1.3vw;
+  font-weight: bold;
+  font-variant-caps: titling-caps;
+  text-align: center;
+}
+.trendingGames>.trendingGamesEntry>.entries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 4vw; font-size: 1vw;
+}
+.trendingGames>.trendingGamesEntry>.entries>.entry {
+  margin: auto;  height: inherit;line-height: 3vw;
+}
+.trendingGames>.trendingGamesEntry>.entries>.entry>img {
+  height: 3vw;
+  width:90px;
+}
+
+.mainFooterContainer {
+  height: 11vw;
+  margin-top: 3vw;
+  box-shadow: 3px 4px 10px 14px lightgray;
+  display: grid;
+
+}
+.mainFooterContainer>.copyRightsConatiner {
+  margin: auto;
+  font-size:1.3vw;
+}
+.mainBodyConatiner.inner-pages {
+	display: block;
+}
+.mainBodyConatiner-inner {
+	max-width: 1178px;
+	width: 100%;
+	margin: 0 auto;
+}
+.gallery-content .item {
+	width: 23%;
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+}
+.gallery-content .item img {
+	width: 100%;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+.mainBodyConatiner-inner {
+	padding: 0 30px;
+}
+.mainBodyConatiner-inner {
+	width: 90%;
+}
+.gallery-content .item {
+    width: 22%;
+}
+}
+
+@media screen and (max-width: 900px) {
+.trendingGames .entries .entry:nth-child(2) {
+	display: none;
+}
+.trendingGames > .trendingGamesEntry > .entries {
+    display: inline;
+	height: 5vw;
+	text-align: center;
+}
+.trendingGames > .trendingGamesEntry > .entries > .entry > img {
+	height: 5vw;
+	width:60%
+}
+.gallery-content .item {
+	width: 30%;
+}
+.gallery-content .item {
+	width: 29%;
+}
+}
+
+@media screen and (max-width: 767px) {
+.mainBodyConatiner-inner {
+	width: 85%;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .mainBodyConatiner{
+    grid-template-columns: 100%;
+    height:6vw;
+  }
+  .mainHeaderContainer {
+
+    height: 20vw;
+    grid-template-columns: 50% auto;
+
+  }
+  .linksContainer{
+    display: none;
+  }
+  .mobileViewMenu{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+  }
+  .logoContainer{
+    margin: 0;
+    justify-self: center;
+  }
+  .logo >.imgLogo {
+    height: inherit;
+  }
+  .contentWrapper{
+   height: 25vw;
+  }
+  .detailsConatiner > .deatilsHeader {
+
+    font-size: 3.3vw;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  .detailsConatiner > .detailEntry > .entries {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2vw;
+
+  }
+  .mainBodyHeaderLinksContainerMV {
+    display: none;
+  }
+  .mvlinksList {
+
+    display: grid;
+    grid-row-gap: 5vw;
+    margin: 4vw;
+
+  }
+  .mvlink {
+    padding: 1vw;
+    font-size: 3.2vw;
+    box-shadow: 5px 10px 15px lightgray;
+    cursor: pointer;
+	text-decoration: none;
+    color: #222;
+  }
+   .mainFooterContainer{
+     display: none;
+   }
+  .mainBodyRight{
+    display: none;
+  }
+	.gallery-content .item {
+		width: 41%;
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 1</title>
+  <style>
+
+ 
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+ 
+$(document).ready(function(){
+   var urlLink= "https://jsonplaceholder.typicode.com/photos";
+  $("button").click(function(){
+    $(this).hide();
+      $.ajax( {type:"GET",url:urlLink,success:function(data,status,jqXHR){
+          
+      
+for ( var i = 0; i < 100; i++)
+        { $("#1").append('"albumId": '+data[i].albumId+',<br>'+ '"id": '+data[i].id+',<br>'+'"title":" '+data[i].title+'",<br>'+'"url":<a href="#" >' +data[i].url+' </a></br>'+ '"thumbnailUrl": "'+data[i].thumbnailUrl+'"<br><br>' );
+                }
+              
+
+              for (i = 0; i < 100; i++)
+        {
+
+       
+          $("#1").append('<div >'+data[i].title+' <a href="'+data[i].url+'"><img src="'+data[i].thumbnailUrl+'"></img></a></div><br>');
+
+
+        }
+            },
+      error:function(xhr,status,errorThrown){
+          var errorXHR=JSON.stringify(xhr);
+          alert("Error"+errorXHR);
+
+      }
+
+
+
+    });
+    
+    });
+  });     
+</script>
+</head>
+<body >
+  
+  <div id="1"></div>
+  
+
+<button>button</button>
+
+</body>
+</html>

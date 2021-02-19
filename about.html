@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat&display=swap" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+   <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+ </head>
+
+<body>
+    <header>
+     <div class="mainHeaderContainer">
+       <div class="logoContainer">
+         <a href="index.html" class="logoContainer">
+         <div class="logo">
+               <img src="images/logo.png" alt="logo" class="imgLogo">
+         </div>
+	   </a>
+       </div>
+       <div class="linksContainer">
+         <div class="linksList">
+             <a class="link" href="index.html"><div class="link">Home</div></a>
+             <a class="link" href="news.html"><div class="link">News</div></a>
+             <a class="link" href="hardware.html"><div class="link">Hardware</div></a>
+             <a class="link" href="magazine.html"><div class="link">Magazine</div></a>
+             <a class="link" href="software.html"><div class="link">Software</div></a>
+         </div>
+       </div>
+       <div class="mobileViewMenu" onclick="toggle_visibility('mvLinks');">
+         <div class="menu"><img src="images/menu.png" alt="menu"/></div>
+       </div>
+     </div>
+  <div class="mainBodyHeaderLinksContainerMV" id="mvLinks">
+    <div class="mvlinksContainer">
+      <div class="mvlinksList">
+        <a class="mvlink" href="index.html"><div class="mvlink">Home</div></a>
+        <a class="mvlink" href="news.html"><div class="mvlink">News</div></a>
+        <a class="mvlink" href="hardware.html"><div class="mvlink">Hardware</div></a>
+        <a class="mvlink" href="magazine.html"><div class="mvlink">Magazine</div></a>
+        <a class="mvlink" href="software.html"><div class="mvlink">Software</div></a>
+      </div>
+    </div>
+  </div>
+  </header>
+  <section>
+	 <div class="mainBodyConatiner inner-pages">
+		<div class="mainBodyConatiner-inner">
+			<h1>Our Mission</h1>
+			<h3>To provide the latest information about games.</h3>
+			<div class="inner-content">
+				<center>
+				<h4>About</h4>
+				<p>Founded in April of 2020 and based in Canada is a trusted community for people to list and discover new information about games hardware and software.This website has been created by a group of 5 people. Our team research for latest gaming techonlogy all the time. We created our site responsive to make every user happy and we are update our site time to time.we will provide our users with latest updates regarding our websites and continue to entertain our audience with best possible measures.</p>
+				<h4>Our Team</h4>
+				</center>
+				<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/karan.jpg" style="width:100%">
+  <div class="text">Karandeep</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/honey.jpg" style="width:100%">
+  <div class="text">Ikbalpreet</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/shubham.jpg" style="width:100%">
+  <div class="text">Shubham</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/navneet1.jpg" style="width:100%">
+  <div class="text">Navneet Cheema</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/navneet2.jpg" style="width:100%">
+  <div class="text">Navneet Kaur Bhangu</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+   <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+			</div>
+	    </div>
+	 </div>
+  </section>
+	<footer>
+		<div class="mainFooterContainer">
+			<div class="linksContainer">
+				<div class="linksList">
+					<a class="link" href="about.html"><div class="link">About us</div></a>
+					<a class="link" href="disclaimer.html"><div class="link">Disclaimer</div></a>
+					<a class="link" href="privacypolicy.html"><div class="link">Privacy Policy</div></a>
+					<a class="link" href="termsandconditions.html"><div class="link">Term and Conditions</div></a>
+					<a class="link" href="contact.html"><div class="link">Contact us</div></a>
+				</div>
+			</div>
+			<div class="copyRightsConatiner">
+				<div class="copyRight">All Rights Reserved @ CSAT</div>
+			</div>
+		</div>
+	</footer>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

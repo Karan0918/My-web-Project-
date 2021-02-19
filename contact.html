@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/contact.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat&display=swap" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script> 
+  <script src="js/main.js"></script> 
+  <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script  src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
+   <script  src="js/contact.js"></script>
+   <script>
+  jQuery(document).ready(function ($) {
+    $( "#datepicker" ).datepicker();
+    });
+  
+  </script>
+  
+ </head>
+
+<body>
+    <header>
+     <div class="mainHeaderContainer">
+       <div class="logoContainer">
+         <a href="index.html" class="logoContainer">
+         <div class="logo">
+               <img src="images/logo.png" class="imgLogo" alt="logo">
+         </div>
+	   </a>
+       </div>
+       <div class="linksContainer">
+         <div class="linksList">
+             <a class="link" href="index.html"><div class="link">Home</div></a>
+             <a class="link" href="news.html"><div class="link">News</div></a>
+             <a class="link" href="hardware.html"><div class="link">Hardware</div></a>
+             <a class="link" href="magazine.html"><div class="link">Magazine</div></a>
+             <a class="link" href="software.html"><div class="link">Software</div></a>
+         </div>
+       </div>
+       <div class="mobileViewMenu" onclick="toggle_visibility('mvLinks');">
+         <div class="menu"><img src="images/menu.png" alt="menu" /></div>
+       </div>
+     </div>
+  <div class="mainBodyHeaderLinksContainerMV" id="mvLinks">
+    <div class="mvlinksContainer">
+      <div class="mvlinksList">
+        <a class="mvlink" href="index.html"><div class="mvlink">Home</div></a>
+        <a class="mvlink" href="news.html"><div class="mvlink">News</div></a>
+        <a class="mvlink" href="hardware.html"><div class="mvlink">Hardware</div></a>
+        <a class="mvlink" href="magazine.html"><div class="mvlink">Magazine</div></a>
+        <a class="mvlink" href="software.html"><div class="mvlink">Software</div></a>
+      </div>
+    </div>
+  </div>
+  </header>
+  <section>
+	<div class="mainBodyConatiner inner-pages">
+		<div class="mainBodyConatiner-inner">
+			<h1>Feel Free To Contact</h1>
+			<h4>Our Email: <a href="mailto:gaminginfo@gmail.com" class="slink">gaminginfo@gmail.com</a></h4>
+			<h4>Contact Form</h4>
+			<div class="inner-content">
+				<div class="container">
+					<form id="contact_form" name="contact_form" action="contact.html" method="get">
+						<label for="fname">First Name</label>
+						<span id="fname_error">*</span>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						
+						<label for="lname">Last Name</label>
+						<span id="lname_error">*</span>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						
+						<label for="datepicker">Date</label>
+						<input type="text" id="datepicker" placeholder="Enter Date" required="required">
+						
+						<label for="subject">Subject</label>
+						<span id="subject_error">*</span>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						
+						<input type="button" id="btn" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<footer>
+		<div class="mainFooterContainer">
+			<div class="linksContainer">
+				<div class="linksList">
+					<a class="link" href="about.html"><div class="link">About us</div></a>
+					<a class="link" href="disclaimer.html"><div class="link">Disclaimer</div></a>
+					<a class="link" href="privacypolicy.html"><div class="link">Privacy Policy</div></a>
+					<a class="link" href="termsandconditions.html"><div class="link">Term and Conditions</div></a>
+					<a class="link" href="contact.html"><div class="link">Contact us</div></a>
+				</div>
+			</div>
+			<div class="copyRightsConatiner">
+				<div class="copyRight">All Rights Reserved @ CSAT</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
